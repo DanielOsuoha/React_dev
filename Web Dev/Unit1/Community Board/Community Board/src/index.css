@@ -18,30 +18,11 @@
   color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   padding: 0 0 1.9em 0;
+  box-shadow: 0 15px 25px #706d6da8
 }
 
-.menu-item h3 {
-  margin: 2px;
-  font-weight: 600;
-  font-size: 1.2em;
-}
-
-.menu-item p {
-  margin: 2px;
-  font-weight: 400;
-  color: #666;
-}
-
-.menu-item img {
-  width: 100%;
-  height: 50%;
-  /* object-fit: cover; */
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-}
 
 .menu-item button {
   color: white;
@@ -52,22 +33,17 @@
   margin-top: auto;
 }
 
-.menu-item a {
-  text-decoration: none;
-  margin-top: auto;
-}
-
 .menu-item img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   object-fit: cover;
 }
 
 .menu-item button {
   color: white;
-  padding: 0.5em 1em;
   background-color: rgb(223, 23, 23);
   border: 2px solid transparent;
+  margin-bottom: 4px;
 }
 .menu-item button:hover {
   border-color: #128381;
@@ -86,7 +62,6 @@
 }
 
 .menu img {
-  /* height: auto; */
   display: block;
   margin: 0 auto;
 }
@@ -98,20 +73,22 @@ body {
   min-height: 100vh;
   color: white;
   background-color: rgba(133, 201, 206, 0.936);
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.9em;
   line-height: 2.7;
   margin: 5px;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.4em;
-  line-height: 1.7;
-  margin: 5px;
+  font-size: 3.7em;
+  line-height: 2.5;
+  margin: 6px;
   text-align: center;
+  text-shadow: #474646aa 2px 2px 2px;
 }
 
 button {
@@ -131,4 +108,16 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.menu-item h3 {
+  margin: 2px;
+  font-weight: 800;
+  font-size: 1.4em;
+
+}
+.menu-item h4{
+  margin: 2px;
+  font-weight: 700;
+  font-size: 1.2em;
 }
