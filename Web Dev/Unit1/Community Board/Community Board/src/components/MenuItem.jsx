@@ -1,11 +1,14 @@
 import React from "react";
 
-const MenuItem = (props) => {
+const MenuItem = ({ name, location, image, btn_link }) => {
     return (
         <div className="menu-item">
-            <h3>{props.name}</h3>
-            <p>{props.location}</p>
-            <button><a href={props.btn_link}>View Menu</a></button>
+            <img src={image} alt={`${name} food truck`} />
+            <h3>{name}</h3>
+            <p>{location}</p>
+            <a href={btn_link}>
+                <button>View Menu</button>
+            </a>
         </div>
     );
 };
