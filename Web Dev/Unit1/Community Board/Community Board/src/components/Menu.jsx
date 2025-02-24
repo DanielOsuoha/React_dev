@@ -2,17 +2,17 @@ import React from "react";
 import MenuItem from "./MenuItem";
 import roofImage from "../assets/roof.png";
 import birriaLandia from "../assets/birria.png";
-import halalGuys from "../assets/halal.png";
+import halalGuys from "../assets/Halal.png";
 import nyDosas from "../assets/dosas.png";
 import kingSouvlaki from "../assets/king.png";
 import jerkPan from "../assets/jerk_pan.png";
 import tong from "../assets/tong.png";
 import ling from "../assets/ling.png";
-import uncleGussys from "../assets/uncle-gussys.png";
-import pataconPisao from "../assets/patacon-pisao.png";
-import momsMono from "../assets/moms-momo.png";
-import makinaCafe from "../assets/makina-cafe.png";
-import mysttikMasala from "../assets/mysttik-masala.png";
+import uncleGussys from "../assets/gussy.png";
+import pataconPisao from "../assets/pisao.png";
+import momsMono from "../assets/mono.png";
+import makinaCafe from "../assets/makina.png";
+import mysttikMasala from "../assets/mysttik.png";
 
 const Menu = () => {
     return (
