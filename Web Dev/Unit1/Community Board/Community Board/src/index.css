@@ -78,7 +78,7 @@ body {
 h1 {
   font-size: 3.9em;
   line-height: 2.7;
-  margin: 5px;
+  margin: 2px;
   text-align: center;
   color: #ffffff;
   text-shadow: 
@@ -100,10 +100,12 @@ h1::after {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 180px;
+  width: 290px;
   height: 4px;
-  background: #ffffff;
+  background: #e4ab1b;
   border-radius: 2px;
+  margin-bottom: 10px;
+  margin-top: -3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
