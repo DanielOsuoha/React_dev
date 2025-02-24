@@ -7,16 +7,21 @@ const Menu = () => {
         <div className="menu">
             <img src={roofImage} alt="" />
             <h2>Food Truck Favourites</h2>
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
+            <div className="menu-row">
+                <MenuItem />
+                <MenuItem />
+                <MenuItem />
+            </div>
+            <div className="menu-row">
+                <MenuItem />
+                <MenuItem />
+                <MenuItem />
+            </div>
+            <div className="menu-row">
+                <MenuItem />
+                <MenuItem />
+                <MenuItem />
+            </div>
         </div>
     );
 };
