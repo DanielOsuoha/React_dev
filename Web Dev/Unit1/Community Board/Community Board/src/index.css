@@ -28,9 +28,11 @@
   height: 40vh;
   border-bottom-right-radius: 10%;
   border-bottom-left-radius: 10%;
-  margin: 10px
+  margin: 10px;
+  color: black;
 }
 .menu-item button {
+  color: white;
   padding: 0.5em 1em;
   background-color: rgb(190, 21, 21);
   border: 2px solid transparent;
@@ -39,15 +41,23 @@
   border-color: #128381;
 }
 .menu-item a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
 }
-menu {
+.menu {
   display: flex;
+  flex-direction: column;
   gap: 1em;
   align-items: center;
   justify-content: center;
-  /* width: 100vw; */
+  width: 100%;
+  padding: 20px;
+}
+
+.menu img {
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 body {

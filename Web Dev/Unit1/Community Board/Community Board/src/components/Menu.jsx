@@ -8,19 +8,19 @@ const Menu = () => {
             <img src={roofImage} alt="" />
             <h2>Food Truck Favourites</h2>
             <div className="menu-row">
-                <MenuItem />
-                <MenuItem />
-                <MenuItem />
+                <MenuItem name='Birria-Landia' location='Mexican'/>
+                <MenuItem name='The Halal Guys' location='Middle Eastern'/>
+                <MenuItem name='NY Dosas' location='Vegetarian'/>
             </div>
             <div className="menu-row">
-                <MenuItem />
-                <MenuItem />
-                <MenuItem />
+                <MenuItem name='Jerk Pan' location='Jamaican'/> 
+                <MenuItem name='Tong' location='Bangladeshi'/>         
+                <MenuItem name='King Souvlaki of Astoria' location='Greek'/>
             </div>
             <div className="menu-row">
-                <MenuItem />
-                <MenuItem />
-                <MenuItem />
+                <MenuItem name="Ling's Sweet Mini Cakes" location='India'/>
+                <MenuItem name='Mysttik Masala' location='India'/>
+                <MenuItem name='Mysttik Masala' location='India'/>
             </div>
         </div>
     );
