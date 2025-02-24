@@ -5,7 +5,7 @@ const MenuItem = ({ name, location, image, btn_link }) => {
         <div className="menu-item">
             <img src={image} alt={`${name} food truck`} />
             <h3>{name}</h3>
-            <p>{location}</p>
+            <h4>{location}</h4>
             <a href={btn_link}>
                 <button>View Menu</button>
             </a>
