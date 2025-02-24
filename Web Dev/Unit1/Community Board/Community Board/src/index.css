@@ -93,7 +93,6 @@ h1 {
   padding: 10px 0;
 }
 
-/* Add decorative underline */
 h1::after {
   content: '';
   position: absolute;
