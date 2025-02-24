@@ -5,7 +5,7 @@ const MenuItem = (props) => {
         <div className="menu-item">
             <h3>{props.name}</h3>
             <p>{props.location}</p>
-            <button><a href={props.btn_link}></a></button>
+            <button><a href={props.btn_link}>View Menu</a></button>
         </div>
     );
 };
