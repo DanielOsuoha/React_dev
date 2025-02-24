@@ -13,13 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 } */
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
 }
-a:hover {
-  color: #535bf2;
+
+
+menu {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
 
 body {
@@ -28,11 +35,22 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: white;
+  background-color: rgb(119, 182, 186);
 }
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 2.7;
+  margin: 5px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4em;
+  line-height: 1.7;
+  margin: 5px;
+  text-align: center;
 }
 
 button {

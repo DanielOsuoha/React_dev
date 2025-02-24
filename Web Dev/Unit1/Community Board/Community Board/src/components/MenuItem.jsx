@@ -3,9 +3,9 @@ import React from "react";
 const MenuItem = (props) => {
     return (
         <div className="menu-item">
-            <h3>Food Truck Name</h3>
-            <p>Food Truck Description</p>
-            <p>Food Truck Location</p>
+            <h3>{props.name}</h3>
+            <p>{props.location}</p>
+            <button><a href={props.btn_link}></a></button>
         </div>
     );
 };
