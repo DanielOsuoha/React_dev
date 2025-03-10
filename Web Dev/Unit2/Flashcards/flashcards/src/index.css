@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --card-background: rgb(255, 255, 255);
 }
 p {
   margin: 0;
@@ -79,7 +80,7 @@ body {
   padding: 3.2em;
   border-radius: 18px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  background-color: #ffffff;
+  background-color: var(--card-background);
   color: black;
   width: 80vw;
   max-width: 90%;
@@ -90,7 +91,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease, background-color 0.4s ease;
   border: #213547 solid 2px;
 }
 

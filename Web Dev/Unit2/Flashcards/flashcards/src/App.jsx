@@ -19,21 +19,27 @@ function App() {
   const [currentCard, setCurrentCard] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
 
-  function toggleAnswer() {
-    setShowAnswer(!showAnswer);
+  function changeBackgroundColor() {
     const root = document.documentElement;
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    root.style.setProperty('--random-color', `${r}, ${g}, ${b}`);
+    const r = 3 + Math.floor(Math.random() * 230);
+    const g = 4 + Math.floor(Math.random() * 203);
+    const b = 6 + Math.floor(Math.random() * 220);
+    root.style.setProperty('--card-background', `rgb(${r + 120}, ${g + 110}, ${b + 130})`);
+  }
+
+  function toggleAnswer() {
+    changeBackgroundColor();
+    setShowAnswer(!showAnswer);
   }
 
   function nextCard() {
+    changeBackgroundColor();
     setShowAnswer(false);
     setCurrentCard((currentCard + 1) % cards.length);
   }
 
   function previousCard() {
+    changeBackgroundColor();
     setShowAnswer(false);
     setCurrentCard((currentCard - 1 + cards.length) % cards.length);
   }
