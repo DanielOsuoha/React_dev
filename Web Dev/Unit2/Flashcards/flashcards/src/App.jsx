@@ -33,6 +33,10 @@ function App() {
         <button className='card' onClick={updateCurrentCard}>
           <Card information={cards[currentCard].question}/>
         </button>
+        <div className="button-container">
+          <button className="nav-button">⬅️</button>
+          <button className="nav-button">➡️</button>
+        </div>
       </div>
     </div>
   )

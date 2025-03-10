@@ -46,7 +46,12 @@ body {
   width: 29em;
   height: 15em;
 }
-
+.buttons{
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 1em;
+  justify-content: center;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
