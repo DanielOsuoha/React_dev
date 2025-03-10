@@ -12,7 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+p {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.8;
+  word-wrap: break-word;
+  font-weight: 500;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -32,23 +38,88 @@ body {
 
 .main {
   margin: auto;
-  padding: 1.5em;
+  padding: 2.0em;
   text-align: center;
   background-color: rgba(163, 167, 167, 0.972);
+  background-image: url('assets/plant_image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: black;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1480px;
+  min-height: 85vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #5f9485 solid 2px;
 }
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.main > * {
+  position: relative;
+  z-index: 1;
+}
+
 .card {
-  padding: 1.5em;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 3.2em;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
   color: black;
-  width: 29em;
-  height: 15em;
+  width: 80vw;
+  max-width: 90%;
+  min-width: 280px;
+  height: auto;
+  min-height: 250px;
+  margin: 2em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  border: #213547 solid 2px;
 }
+
+.card p {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 95%;
+    padding: 1.5em;
+    min-height: 90vh;
+  }
+  
+  .card {
+    width: 85%;
+    padding: 1.5em;
+  }
+  
+  .card p {
+    font-size: 1em;
+  }
+}
+
 .buttons{
   display: flex;
-  /* justify-content: space-between; */
   margin-top: 1em;
   justify-content: center;
 }
@@ -65,7 +136,6 @@ button {
   font-size: 1.5em;
   font-weight: 500;
   font-family: inherit;
-  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }

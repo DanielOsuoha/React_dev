@@ -21,6 +21,11 @@ function App() {
 
   function toggleAnswer() {
     setShowAnswer(!showAnswer);
+    const root = document.documentElement;
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    root.style.setProperty('--random-color', `${r}, ${g}, ${b}`);
   }
 
   function nextCard() {
