@@ -1,0 +1,39 @@
+import { use, useState } from 'react'
+import Card from './card'
+import './App.css'
+
+function App() {
+  const cards = useState([
+    {'question': 'What is the most common houseplant?', 'answer': 'Pothos'},
+    {'question': 'What is the best way to water a plant?', 'answer': 'Bottom up'},
+    {'question': 'What is the best way to get rid of pests on a plant?', 'answer': 'Neem oil'},
+    {'question': 'What is the best light condition for a snake plant?', 'answer': 'Low to bright indirect light'},
+    {'question': 'How often should you fertilize indoor plants?', 'answer': 'Once a month during the growing season'},
+    {'question': 'What is a common sign of overwatering a plant?', 'answer': 'Yellowing leaves and root rot'},
+    {'question': 'What is the best soil type for succulents?', 'answer': 'Well-draining cactus mix'},
+    {'question': 'Why do houseplants develop brown leaf tips?', 'answer': 'Low humidity or inconsistent watering'},
+    {'question': 'What is the easiest flowering houseplant to care for?', 'answer': 'Peace lily'},
+    {'question': 'How can you increase humidity for tropical plants?', 'answer': 'Use a pebble tray or humidifier'}
+  ]);
+  const [currentCard, setCurrentCard] = useState(0);
+  const [count, setCount] = useState(length(cards));
+  function updateCurrentCard(){
+    number = Math.floor(Math.random() * count);
+    setCurrentCard(number);
+  }
+  return (
+    <div className="App">
+      <div className='main'>
+        <h1>The Ultimate Plant Parent!</h1>
+        <p>How good of a plant parent are you? Test all of your plenty knowledge here!</p>
+        <p>Number of cards: {count}</p>
+
+        <button className='card' onClick={updateCurrentCard}>
+          <Card information={cards[currentCard]} />
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default App
