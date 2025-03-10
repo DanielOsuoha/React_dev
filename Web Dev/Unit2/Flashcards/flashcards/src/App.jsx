@@ -1,10 +1,8 @@
-import { use, useState } from 'react'
+import { useState } from 'react'
 import Card from './card'
 import './App.css'
 
 function App() {
-
-  // This instead of const cards = ...
   const [cards] = useState([
     {'question': 'Start', answer: 'Start'},
     {'question': 'What is the most common houseplant?', 'answer': 'Pothos'},
@@ -19,9 +17,20 @@ function App() {
     {'question': 'How can you increase humidity for tropical plants?', 'answer': 'Use a pebble tray or humidifier'}
   ]);
   const [currentCard, setCurrentCard] = useState(0);
-  function updateCurrentCard(){
-    setCurrentCard(1+Math.floor(Math.random() * cards.length));
-    console.log(cards[currentCard]);
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  function toggleAnswer() {
+    setShowAnswer(!showAnswer);
+  }
+
+  function nextCard() {
+    setShowAnswer(false);
+    setCurrentCard((currentCard + 1) % cards.length);
+  }
+
+  function previousCard() {
+    setShowAnswer(false);
+    setCurrentCard((currentCard - 1 + cards.length) % cards.length);
   }
 
   return (
@@ -30,12 +39,14 @@ function App() {
         <h1>The Ultimate Plant Parent!</h1>
         <p>How good of a plant parent are you? Test all of your plenty knowledge here!</p>
         <p>Number of cards: {cards.length}</p>
-        <button className='card' onClick={updateCurrentCard}>
-          <Card information={cards[currentCard].question}/>
+        <button className='card' onClick={toggleAnswer}>
+          <Card 
+            information={showAnswer ? cards[currentCard].answer : cards[currentCard].question}
+          />
         </button>
         <div className="button-container">
-          <button className="nav-button">⬅️</button>
-          <button className="nav-button">➡️</button>
+          <button className="nav-button" onClick={previousCard}>⬅️</button>
+          <button className="nav-button" onClick={nextCard}>➡️</button>
         </div>
       </div>
     </div>
