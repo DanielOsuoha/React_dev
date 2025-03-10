@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #a2d0cd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,19 +30,37 @@ body {
   min-height: 100vh;
 }
 
+.main {
+  margin: auto;
+  padding: 1.5em;
+  text-align: center;
+  background-color: rgba(163, 167, 167, 0.972);
+  color: black;
+}
+.card {
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: black;
+  width: 29em;
+  height: 15em;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+
 button {
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }

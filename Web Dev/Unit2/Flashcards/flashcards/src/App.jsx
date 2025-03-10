@@ -3,7 +3,10 @@ import Card from './card'
 import './App.css'
 
 function App() {
-  const cards = useState([
+
+  // This instead of const cards = ...
+  const [cards] = useState([
+    {'question': 'Start', answer: 'Start'},
     {'question': 'What is the most common houseplant?', 'answer': 'Pothos'},
     {'question': 'What is the best way to water a plant?', 'answer': 'Bottom up'},
     {'question': 'What is the best way to get rid of pests on a plant?', 'answer': 'Neem oil'},
@@ -16,20 +19,19 @@ function App() {
     {'question': 'How can you increase humidity for tropical plants?', 'answer': 'Use a pebble tray or humidifier'}
   ]);
   const [currentCard, setCurrentCard] = useState(0);
-  const [count, setCount] = useState(length(cards));
   function updateCurrentCard(){
-    number = Math.floor(Math.random() * count);
-    setCurrentCard(number);
+    setCurrentCard(1+Math.floor(Math.random() * cards.length));
+    console.log(cards[currentCard]);
   }
+
   return (
     <div className="App">
       <div className='main'>
         <h1>The Ultimate Plant Parent!</h1>
         <p>How good of a plant parent are you? Test all of your plenty knowledge here!</p>
-        <p>Number of cards: {count}</p>
-
+        <p>Number of cards: {cards.length}</p>
         <button className='card' onClick={updateCurrentCard}>
-          <Card information={cards[currentCard]} />
+          <Card information={cards[currentCard].question}/>
         </button>
       </div>
     </div>

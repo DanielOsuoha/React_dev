@@ -7,7 +7,6 @@ function App() {
   const [count, setCount] = useState(0);
   const [multiplier, setMultiplier] = useState(1);
   function updateCount(){
-    alert('You clicked');
     setCount(count + multiplier);
   }
   function buyDoubleStuffed(){
