@@ -36,9 +36,11 @@ The following **optional** features are implemented:
   - A dedicated section of the application displays all the previous images/attributes seen before
   - Each time the API call button is clicked, the history updates with the newest API result
 
-The following **additional** features are implemented:
+The following **additional** features have been or will be implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [X] Add loading states during API calls
+* [X] Implement error handling with user-friendly messages
+* [X] Add dark/light mode toggle
 
 ## Video Walkthrough
 
