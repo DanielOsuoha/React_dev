@@ -2,7 +2,7 @@ import { useState } from 'react';
 import React from "react";
 import '../styles/mainCard.css';
 import { getPlayerInfo } from "../api/nflAPI";
-import defaultImage from '../assets/default2.png';
+import defaultImage from '../assets/default.png';
 
 const MainCard = () => {
     const [banList, setBanList] = useState([]);
