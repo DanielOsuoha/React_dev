@@ -11,6 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --spotify-black: #191414;
+  --spotify-green: #1DB954;
+  --spotify-light-green: #1ED760;
+  --spotify-white: #FFFFFF;
+  --spotify-gray: #B3B3B3;
+  --spotify-dark-gray: #535353;
+  --spotify-darker-gray: #282828;
 }
 
 a {
