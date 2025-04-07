@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Dashboard.css';
-import { getArtistBySearch } from '../api/connection';
-import { getArtistsByGenre } from '../api/connection';
+import { getArtistBySearch } from '../api/connections';
+import { getArtistsByGenre } from '../api/connections';
 import SideMenu from './SideMenu';
 import ArtistList from './List';
 import FeaturedArtist from './Featured';
